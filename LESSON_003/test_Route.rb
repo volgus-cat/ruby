@@ -1,0 +1,33 @@
+require_relative 'Route'
+
+puts "================================================="
+puts "             Тестирование класса Route           "
+puts "================================================="
+puts "Создаём маршрут"
+r = Route.new "Москва","Санкт-Петербург"
+puts "Добавляем промежуточные станции" 
+r.add_sta "Крюково"
+r.add_sta "Новая Тверь"
+r.add_sta "Окуловка"
+r.add_sta "Мельниково"
+r.add_sta "Обухово"
+r.show_route
+puts "Удаляем станцию <Новая тверь>"
+r.del_sta("Новая Тверь")
+r.show_route
+puts "Длина маршрута  = #{r.get_route_lenght} станций"
+puts "Текущая станция = <#{r.get_current_sta_name}>"
+r.next; puts "Текущая станция = <#{r.get_current_sta_name}>"
+r.next; puts "Текущая станция = <#{r.get_current_sta_name}>"
+r.next; puts "Текущая станция = <#{r.get_current_sta_name}>"
+r.next; puts "Текущая станция = <#{r.get_current_sta_name}>"
+r.next; puts "Текущая станция = <#{r.get_current_sta_name}>"
+r.next; puts "Текущая станция = <#{r.get_current_sta_name}>"
+r.next; puts "Текущая станция = <#{r.get_current_sta_name}>"
+r.prev; puts "Текущая станция = <#{r.get_current_sta_name}>"
+r.prev; puts "Текущая станция = <#{r.get_current_sta_name}>"
+r.prev; puts "Текущая станция = <#{r.get_current_sta_name}>"
+r.prev; puts "Текущая станция = <#{r.get_current_sta_name}>"
+r.prev; puts "Текущая станция = <#{r.get_current_sta_name}>"
+r.prev; puts "Текущая станция = <#{r.get_current_sta_name}>"
+r.prev; puts "Текущая станция = <#{r.get_current_sta_name}>"
